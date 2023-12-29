@@ -1,0 +1,139 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include m.tablet {
+    min-height: 70rem;
+  }
+
+  &::before {
+    content: "";
+    background-color: v.$negro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+  .contenido-header {
+    position: relative;
+
+    h1 {
+      color: v.$blanco;
+      margin-top: 5rem;
+      @include m.tablet {
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+// header de cada pagina
+.notavif {
+  &.notwebp {
+    .header-inicio {
+      background-image: url(../img/header_inicio.jpg);
+    }
+  }
+}
+.webp {
+    .header-inicio {
+        background-image: url(../img/header_inicio.webp);
+    }
+}
+.avif {
+    .header-inicio {
+        background-image: url(../img/header_inicio.avif);
+    }
+}
+
+.notavif {
+  &.notwebp {
+    .header-nosotros {
+      background-image: url(../img/header_nosotros.jpg);
+    }
+  }
+}
+.webp {
+    .header-nosotros {
+        background-image: url(../img/header_nosotros.webp);
+    }
+}
+.avif {
+    .header-nosotros {
+        background-image: url(../img/header_nosotros.avif);
+    }
+}
+.notavif {
+  &.notwebp {
+    .header-proceso {
+      background-image: url(../img/header_proceso.jpg);
+    }
+  }
+}
+.webp {
+    .header-proceso {
+        background-image: url(../img/header_proceso.webp);
+    }
+}
+.avif {
+    .header-proceso {
+        background-image: url(../img/header_proceso.avif);
+    }
+}
+.notavif {
+  &.notwebp {
+    .header-menu {
+      background-image: url(../img/header_menu.jpg);
+    }
+  }
+}
+.webp {
+    .header-menu {
+        background-image: url(../img/header_menu.webp);
+    }
+}
+.avif {
+    .header-menu {
+        background-image: url(../img/header_menu.avif);
+    }
+}
+.notavif {
+  &.notwebp {
+    .header-galeria {
+      background-image: url(../img/header_galeria.jpg);
+    }
+  }
+}
+.webp {
+    .header-galeria {
+        background-image: url(../img/header_galeria.webp);
+    }
+}
+.avif {
+    .header-galeria {
+        background-image: url(../img/header_galeria.avif);
+    }
+}
+.notavif {
+  &.notwebp {
+    .header-contacto {
+      background-image: url(../img/header_contacto.jpg);
+    }
+  }
+}
+.webp {
+    .header-contacto {
+        background-image: url(../img/header_contacto.webp);
+    }
+}
+.avif {
+    .header-contacto {
+        background-image: url(../img/header_contacto.avif);
+    }
+}

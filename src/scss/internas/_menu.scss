@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.notavif {
+    &.notwebp {
+        .contenido-menu {
+            background-image: url(../img/cafe.jpg);
+        }
+    }
+}
+.webp {
+    .contenido-menu {
+        background-image: url(../img/cafe.webp);
+    }
+}
+.avif {
+    .contenido-menu {
+        background-image: url(../img/cafe.avif);
+    }
+}
+.contenido-menu {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    aspect-ratio:  3 / 6;
+
+    @include m.tablet { 
+        background-size: 90%;
+        aspect-ratio:  3 / 4;
+    }
+
+    @include m.desktop { 
+        @include m.grid(2, 5rem);
+        aspect-ratio: 16 / 6;
+        background-size: 50%;
+        background-position: bottom right;
+    }
+
+    .texto {
+
+        p {
+            font-size: 2rem;
+        }
+    }
+}
