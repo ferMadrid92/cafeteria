@@ -56,7 +56,7 @@ exports.dev = dev;
 exports.imagenes = imagenes;
 exports.imgWebp = imgWebp;
 exports.imgAvif = imgAvif;
-exports.default = series(imagenes, imgWebp, imgAvif, css, dev);
+exports.default = series(imagenes, imgWebp, imgAvif, css);
 
 // series - Se inicia una tarea y hasta que finaliza, inicia la siguiente
 // parallel - Todas inician al mismo tiempo
